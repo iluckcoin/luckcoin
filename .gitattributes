@@ -1,0 +1,4 @@
+*.js linguist-language=ruby
+*.css linguist-language=ruby
+*.html linguist-language=ruby
+*.rb linguist-language=ruby

@@ -1,0 +1,51 @@
+<%= form_for([:users,@wallet],html: {class:'form-horizontal',id: 'transfer-form'},remote: true) do |f| %>
+  <table class="table">
+    <tbody>
+      <tr>
+        <td class="padding-top-15" style="width:80px;">我的地址</td>
+        <td><%= f.text_field :address, autocomplete: "off", class: 'form-control',disabled: 'disabled' %></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-top-15">对方地址</td>
+        <td><input type="text" autocomplete="off" class="form-control" name="to_address" value="0x3fA973C8afA441fd2F5c3F12893D88A1b031bbFA" datatype="*" nullmsg="请填写对方地址" /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-top-15">数量</td>
+        <td><input type="text" autocomplete="off" placeholder="以太币数量(如:3)" class="form-control" name="value" datatype="*" nullmsg="请填写要转账的数量" onkeyup="value=value.replace(/[^0-9]/g,'');" /></td>
+        <td>ETH(WEI)</td>
+      </tr>
+      <tr>
+        <td class="padding-top-15">Gas Limit</td>
+        <td><input type="text" autocomplete="off" class="form-control" name="gas_limit"  value="21000" onkeyup="value=value.replace(/[^0-9]/g,'');" datatype="*" /></td>
+        <td class="padding-top-15">UNITS</td>
+      </tr>
+
+      <tr>
+        <td class="padding-top-15">Gas Price</td>
+        <td><input type="text" autocomplete="off" class="form-control" name="gas_price" value="3" datatype="*" onkeyup="value=value.replace(/[^0-9]/g,'');" /></td>
+        <td class="padding-top-15">GWEI</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <div class="clearfix form-actions">
+      <div class="text-center">
+        <button class="btn btn-info" type="submit">
+          确定
+        </button>
+        <button class="btn btn-default" type="button" onclick="closeSelfLayer()">
+          取消
+        </button>
+      </div>
+    </div>
+<% end %>
+
+<%= content_for :footer_javascripts  do%>
+  <script type="text/javascript">
+    autoReHeight();
+    customFormValidate('form');
+  </script>
+<% end %>

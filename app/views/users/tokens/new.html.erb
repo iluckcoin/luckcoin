@@ -1,0 +1,39 @@
+<%= form_for([:users,@wallet,@token],html: {class:'form-horizontal',id: 'transfer-form'},remote: true) do |f| %>
+  <table class="table">
+    <tbody>
+      <tr>
+        <td class="padding-top-15" style="width:180px;">Token Contract Address</td>
+        <td><%= f.text_field :contract_address, autocomplete: "off", class: 'form-control',datatype: '*',nullmsg: '请填写合约地址' %></td>
+      </tr>
+      <tr>
+        <td class="padding-top-15">Token Symbol</td>
+        <td>
+          <%= f.text_field :token_symbol, autocomplete: "off", class: 'form-control',datatype: '*',nullmsg: '请填写Token名称' %>
+        </td>
+      </tr>
+      <tr>
+        <td class="padding-top-15">Decimal of Precision</td>
+        <td>
+          <%= f.text_field :precision, autocomplete: "off", class: 'form-control',datatype: '*',onkeyup: "value=value.replace(/[^0-9]/g,'')" %></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div class="clearfix form-actions">
+      <div class="text-center">
+        <button class="btn btn-info" type="submit">
+          确定
+        </button>
+        <button class="btn btn-default" type="button" onclick="closeSelfLayer()">
+          取消
+        </button>
+      </div>
+    </div>
+<% end %>
+
+<%= content_for :footer_javascripts  do%>
+  <script type="text/javascript">
+    customFormValidate('form');
+  </script>
+<% end %>

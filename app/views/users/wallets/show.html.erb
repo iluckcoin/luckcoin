@@ -1,0 +1,36 @@
+<div class="portlet portlet-boxed" ng-controller="walletCtrl" ng-app="app">
+  <div class="portlet-body">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>钱包名称:</td>
+          <td><%= @wallet.name %></td>
+        </tr>
+        <tr>
+          <td>钱包地址:</td>
+          <td><%= @wallet.address %></td>
+        </tr>
+        <tr>
+          <td>钱包余额(ETC):</td>
+          <td><%= @wallet.balance %></td>
+        </tr>
+        <tr class="hidden">
+          <td><button type="button" class="btn btn-info" ng-click="addToken()">添加Token</button></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><%= ENV['token_symbol'] %>余额:</td>
+          <td><%= @wallet.contract_balance %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- .portlet-body -->
+</div><!-- .portlet portlet-boxed -->
+
+
+
+<%= content_for :footer_javascripts  do%>
+  <script type="text/javascript">
+    Wallet.init(<%= @wallet.to_json.html_safe %>)
+  </script>
+<% end %>

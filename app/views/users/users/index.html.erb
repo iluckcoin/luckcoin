@@ -1,0 +1,65 @@
+<div class="portlet portlet-boxed" id="wallet-wrapper" ng-controller="walletCtrl" ng-app="app">
+  <div class="portlet-body">
+    <div class="layout layout-main-right layout-stack-sm">
+      <div class="col-md-3 col-sm-4 layout-sidebar">
+        <div class="nav-layout-sidebar-skip">
+          <br class="xs-20 visible-xs">
+          <strong>Tab Navigation</strong> / <a href="#settings-content">Skip to Content</a>
+        </div>
+        <ul id="myTab" class="nav nav-layout-sidebar nav-stacked">
+          <li class="active">
+            <a href="#my-wallet-tab" data-toggle="tab"><i class="fa fa-user"></i>&nbsp;&nbsp;我的钱包</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- .col-md-3 col-sm-4 layout-sidebar -->
+      <div class="col-md-9 col-sm-8 layout-main">
+        <div id="my-wallet-tab" class="tab-content stacked-content">
+          <div class="tab-pane fade in active" id="profile-tab">
+            <button type="button" class="btn btn-primary" ng-click="createWallet()">创建钱包</button>
+            <button type="button" class="btn btn-default" ng-click="importWallet()">导入钱包</button>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>我的钱包</th>
+                  <th>地址</th>
+                  <th>余额(ETH)</th>
+                  <th><%=ENV['token_symbol'] %>余额</th>
+                </tr>
+                </thead>
+              <tbody>
+                <tr ng-repeat="wallet in data.wallets">
+                  <td><a href="/users/wallets/{{wallet.id}}">{{wallet.name}}</a></td>
+                  <td><a href="https://ropsten.etherscan.io/address/{{wallet.address}}" target="_blank">{{wallet.address}}</a></td>
+                  <td>
+                    {{wallet.balance}}
+                    <button type="button" class="btn btn-xs btn-success pull-right" ng-click="refreshBalance(wallet)">刷新</button>
+                  </td>
+                  <td>{{wallet.contract_balance}}</td>
+                  <td><button type="button" class="pull-right btn btn-xs btn-primary" ng-click="transfer(wallet)">转账</button></td>
+                </tr>
+                <tr>
+                  <td>我的MetaMask钱包:&nbsp;&nbsp;{{data.metaMaskAddress}}</td>
+                  <td></td>
+                  <td><button class="btn btn-xs btn-success pull-right" ng-click="connectToMetaMask()">连接到MetaMask</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- #profile-tab -->
+        </div><!-- #my-wallet-tab -->
+      </div><!-- .col-md-9 col-sm-8 layout-main -->
+      <!-- .col-md-9 col-sm-8 layout-main -->
+
+    </div>
+    <!-- .row -->
+  </div>
+  <!-- .portlet-body -->
+</div>
+<!-- .portlet portlet-boxed -->
+
+
+<%= content_for :footer_javascripts  do%>
+  <script type="text/javascript">
+  </script>
+<% end %>

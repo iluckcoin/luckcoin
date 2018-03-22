@@ -1,0 +1,10 @@
+<% if @success %>
+closeSelfLayer();
+var $scope = parent.angular.element('[ng-controller=walletCtrl]').scope();
+$scope.getTokens();
+$scope.$apply(function() {
+  $scope.wallet.tokens.push(<%= @token.to_json.html_safe %>);
+});
+<% else %>
+  parent.layer.alert('<%= @message %>');
+<% end %>

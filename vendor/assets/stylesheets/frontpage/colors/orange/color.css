@@ -1,0 +1,43 @@
+.bg-color, .panel-group-custom .panel-title a:before, .panel-group-custom .panel-title a.collapsed:hover:before, .post-heading-left h2 span, .post-heading-center h2 span, #header.header-page, #header .header-txt-left h1 span, #header .header-txt-center h1 span, #header .header-txt-right h1 span, #header .header-txt-center h2, .affa-feature-icon .fa, .affa-feature-icon-left .fa, .affa-feature-icon-right .fa, .bg-dark .carousel-slider.affa-portfolios-slider .slick-dots li button:hover, .bg-dark .carousel-slider.affa-portfolios-slider .slick-dots li button:hover, .bg-dark .carousel-slider.affa-portfolios-slider .slick-dots li.slick-active button, .bg-img .carousel-slider.affa-portfolios-slider .slick-dots li button:hover, .bg-img .carousel-slider.affa-portfolios-slider .slick-dots li.slick-active button, .bg-parallax .carousel-slider.affa-portfolios-slider .slick-dots li button:hover, .bg-parallax .carousel-slider.affa-portfolios-slider .slick-dots li.slick-active button, .bg-dark .carousel-slider.affa-portfolios-slider2 .slick-dots li.slick-active button, .bg-img .carousel-slider.affa-portfolios-slider2 .slick-dots li button:hover, .bg-img .carousel-slider.affa-portfolios-slider2 .slick-dots li.slick-active button, .bg-parallax .carousel-slider.affa-portfolios-slider2 .slick-dots li button:hover, .bg-parallax .carousel-slider.affa-portfolios-slider2 .slick-dots li.slick-active button, .carousel-slider.affa-testimonials-carousel .slick-dots li button, .affa-tbl-pricing .tbl-prc-col.tbl-prc-col-recommended .tbl-prc-heading, .affa-tbl-process .tbl-process-bar p, .bg-dark .affa-tbl-process .tbl-process-bar p, .bg-img .affa-tbl-process .tbl-process-bar p, .bg-parallax .affa-tbl-process .tbl-process-bar p, #footer .footer-socials a { background-color:#f46c3c; }
+
+a, a:visited, .list-icon li .fa, .post-heading-left h2, .post-heading-center h2, .bg-color .post-heading-left h2 span, .bg-color .post-heading-center h2 span, .affa-counter2 h4, .affa-team .team-overlay .team-name h4, .affa-team .team-overlay .team-socials a:hover, .affa-tbl-pricing .tbl-prc-col .tbl-prc-heading h5, .affa-tbl-process .tbl-process-txt, .affa-tbl-process .tbl-process-txt h4 { color:#f46c3c; }
+
+.bg-color a:visited { color:#FFF; }
+a:hover { color:#707070; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#505050; }
+
+.bg-color a:hover, .bg-color .panel-group-custom .panel-title a.collapsed:hover:before { color:#f7ddd3; }
+
+.btn-custom, input[type="button"], input[type="submit"], input[type="reset"], button {
+	background-color:#f46c3c;
+	border-color:#f46c3c;
+}
+.btn-custom.btn-border, input[type="button"].btn-border, input[type="submit"].btn-border, input[type="reset"].btn-border, button.btn-border { color:#f46c3c !important; }
+.btn-custom:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+	background-color:#e96030;
+	border-color:#e96030;
+}
+.btn-custom.btn-border:hover, input[type="button"].btn-border:hover, input[type="submit"].btn-border:hover, input[type="reset"].btn-border:hover, button.btn-border:hover {
+	color:#FFF !important;
+	background-color:#f46c3c;
+	border-color:#f46c3c;
+}
+.btn-custom.btn-border.btn-white:hover, input[type="button"].btn-border.btn-white:hover, input[type="submit"].btn-border.btn-white:hover, input[type="reset"].btn-border.btn-white:hover, button.btn-border.btn-white:hover {
+	color:#f46c3c !important;
+	background-color:#FFF;
+	border-color:#FFF;
+}
+input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled, button:disabled, input[type="button"]:disabled:hover, input[type="submit"]:disabled:hover, input[type="reset"]:disabled:hover, button:disabled:hover, input[type="button"].btn-border:disabled, input[type="submit"].btn-border:disabled, input[type="reset"].btn-border:disabled, button.btn-border:disabled, input[type="button"].btn-border:disabled:hover, input[type="submit"].btn-border:disabled:hover, input[type="reset"].btn-border:disabled:hover, button.btn-border:disabled:hover {
+	color:#9a9a9a !important;
+	background-color:#d0d0d0;
+	border-color:#d0d0d0;
+}
+
+.bg-color .panel-group-custom .panel-title a.collapsed:hover { color:#f7ddd3 !important; }
+
+#header .nav > li.menu-btn > a { background-color:#f46c3c !important; }
+#header .nav > li.menu-btn > a:hover, #header .nav > li.menu-btn.active > a { background-color:#e96030 !important; }
+
+.ie .affa-tbl-pricing .tbl-prc-col.tbl-prc-col-recommended .tbl-prc-heading { border-color:#f46c3c; }
+
+#footer .footer-socials a:hover { background-color:#e96030; }

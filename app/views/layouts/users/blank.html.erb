@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Analytics Dashboard  MVP Ready</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <%= stylesheet_link_tag    'users/application', media: 'all', 'data-turbolinks-track' => false %>
+    <%= favicon_link_tag 'favicon.ico' %>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="<%= params[:controller] %>">
+  <div id="wrapper" style="padding:0">
+      <div class="content" style="padding-top:5px;padding-bottom:5px;margin-bottom:0">
+        <div class="container">
+          <%= yield %>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- .content -->
+  </div>
+  <!-- /#wrapper -->
+  <%= javascript_include_tag 'users/application' %>
+  <%= javascript_include_tag params[:controller] if Rails.application.assets.find_asset("#{params[:controller]}.js") %>
+  <%= yield :footer_javascripts %>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Your Basic Site Informations -->
+  <title>WStartup Responsive Startup Landing Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="WStartup is a premium flat startup landing page that built-in professional responsive design, colorful and have a slew of features.">
+  <meta name="keywords" content="Landing Page, One Page Template, Responsive, Flat Design, Startup, Premium, Creative, Colorful, Portfolio, PSD, HTML5, CSS3, jQuery">
+  <meta name="author" content="Affapress">
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <!--[if lt IE 9]>
+    <%= javascript_include_tag    'html5.js' %>
+    <%= javascript_include_tag    'respond.min.js' %>
+  <![endif]-->
+    <!--[if lt IE 8]>
+    <%= stylesheet_link_tag    'ie-older.css' %>
+  <![endif]-->
+
+  <noscript>
+    <%= stylesheet_link_tag    'frontpage/no-js.css' %>
+  </noscript>
+  
+  <%= favicon_link_tag 'favicon.ico' %>
+  <link rel="apple-touch-icon" href="<%= asset_path('apple-touch-icon.png') %>">
+  <link rel="apple-touch-icon" sizes="72x72" href="<%= asset_path('apple-touch-icon-72x72.png') %>">
+  <link rel="apple-touch-icon" sizes="114x114" href="<%= asset_path('apple-touch-icon-114x114.png') %>">
+
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="<%= params[:controller] %>">
+  <%= yield %>
+
+  <!--[if lt IE 8]>
+      <div class="browser-notice">
+            <div class="container">
+              <div class="text">
+                    <h1>Internet Explorer Out To Date</h1>
+                    <p>Please update your Internet Explorer browser with a newer version (Internet Explorer 8 above) now!</p>
+                    <span>You can download it <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">here....</a></span>
+                </div>
+            </div>
+        </div>
+  <![endif]-->
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag params[:controller] if Rails.application.assets.find_asset("#{params[:controller]}.js") %>
+</body>
+
+</html>

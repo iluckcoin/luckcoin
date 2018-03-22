@@ -1,0 +1,5 @@
+<% unless @success %>
+	parent.layer.alert('<%= @result.html_safe %>');
+<% else %>
+  parent.layer.closeAll();
+<% end %>

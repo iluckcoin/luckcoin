@@ -1,0 +1,992 @@
+<!-- #header -->
+<header id="header" data-parallax="scroll" data-speed="0.2" data-natural-width="1920" data-natural-height="1080" data-image-src="<%= asset_path('content/bg/1.jpg') %>">
+  <!-- #navigation -->
+  <nav id="navigation" class="navbar scrollspy">
+    <!-- .container -->
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html"><%= image_tag("logo.png",alt: 'Logo') %></a>
+        <!-- site logo -->
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#header" class="smooth-scroll">Home</a></li>
+        <!--<li><a href="#project" class="smooth-scroll">Project</a></li>-->
+        <li><a href="#token" class="smooth-scroll">Token</a></li>
+        <li><a href="#whitepaper" class="smooth-scroll">White Paper</a></li>
+        <li><a href="#roadmap" class="smooth-scroll">Roadmap</a></li>
+        <li><a href="#team" class="smooth-scroll">Team</a></li>
+        <li><a href="#bounty" class="smooth-scroll">Bounty</a></li>
+        <li><a href="#faq" class="smooth-scroll">FAQ</a></li>
+
+        <li class="menu-btn">
+          <% if user_signed_in? %>
+          <a href="<%= users_users_path %>" class="smooth-scroll">进入会员中心</a>
+          <% else %>
+          <a href="<%= new_session_path(:user) %>" class="smooth-scroll">登录</a>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+    <!-- .container end -->
+  </nav>
+  <!-- #navigation end -->
+  <!-- .header-content -->
+  <div class="header-content">
+    <!-- .container -->
+    <div class="container">
+      <!-- .row -->
+      <div class="row">
+        <div class="col-md-7">
+          <div class="header-txt">
+            <h1>The First Decentralized Luck Coin for Gambling </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elita duis massa enim nut maximus et nisi at pellentesque. Proin vel dictum nisi donec quis gravida elit, quis tincidunt turpis malesuada.</p>
+            <div class="header-btn">
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/page.html" class="btn-custom btn-green">Learn More</a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom btn-blue">Get the App</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-5 col-lg-4 col-sm-offset-2 col-md-offset-0 col-lg-offset-1 header-img-wrap">
+          <figure class="header-img img-layer-left-front">
+            <div class="img-layer-left">
+              <img src="<%= asset_path('feature-2-left.png') %>" alt="Image Left" class="animation" data-animation="animation-fade-in-left">
+            </div>
+            <div class="img-layer-right">
+              <img src="<%= asset_path('feature-2-right.png') %>" alt="Image Right" class="animation" data-animation="animation-fade-in-right" data-delay="400">
+            </div>
+          </figure>
+        </div>
+      </div>
+      <!-- .row end -->
+    </div>
+    <!-- .container end -->
+  </div>
+  <!-- .header-content end -->
+</header>
+<!-- #header end -->
+<!-- #features -->
+<div id="project" class="bg-grey container-padding8040">
+  <!-- .container -->
+  <div class="container">
+    <!-- .row -->
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- 1 -->
+        <div class="affa-feature-img">
+          <img src="<%= asset_path('list-5.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-down">
+          <h4>Global & Open</h4>
+          <p>Lorem ipsum dolor sit ametus, consectetur adipiscing elit. Praesent at dui quis tortor mollis feugiat. In luctus ornare turpis. Donec nec auctor tortor, sit amet vehicula dui.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <!-- 2 -->
+        <div class="affa-feature-img">
+          <img src="<%= asset_path('map-7.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-down" data-delay="300">
+          <h4>Decentralized </h4>
+          <p>Lorem ipsum dolor sit ametus, consectetur adipiscing elit. Praesent at dui quis tortor mollis feugiat. In luctus ornare turpis. Donec nec auctor tortor, sit amet vehicula dui.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <!-- 3 -->
+        <div class="affa-feature-img">
+          <img src="<%= asset_path('user-25.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-down" data-delay="600">
+          <h4>Encrypted</h4>
+          <p>Lorem ipsum dolor sit ametus, consectetur adipiscing elit. Praesent at dui quis tortor mollis feugiat. In luctus ornare turpis. Donec nec auctor tortor, sit amet vehicula dui.</p>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #features end -->
+<!-- #features2 -->
+<div id="features2" class="padding-top120">
+  <!-- .container -->
+  <div class="container">
+    <!-- .row -->
+    <div class="row padding-bottom60">
+      <div class="col-sm-10 col-md-7 col-lg-6 col-sm-offset-1 col-md-offset-0 text-center-sm text-center-xs">
+        <figure class="margin-bottom40 animation" data-animation="animation-fade-in-left">
+          <img src="<%= asset_path('feature-1.png') %>" alt="Image">
+        </figure>
+      </div>
+      <div class="col-sm-10 col-md-5 col-lg-6 col-sm-offset-1 col-md-offset-0">
+        <div class="text-wrap40 margin-bottom40 text-center-sm text-center-xs">
+          <div class="post-heading-left">
+            <h2>We Are <span>Startup</span></h2>
+          </div>
+          <p class="margin-bottom30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus sapien vitae purus rhoncus, eget lacinia nulla viverra sed semper leo purus mauris. Suspendisse vitae magna eu magna gravida aliquet vel in nisl proin quis id semper leo. Nunc pharetra elementum lectus a accumsan.</p>
+          <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/page.html" class="btn-custom btn-border">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+    <!-- .row -->
+    <div class="row container-wrap">
+      <div class="col-sm-10 col-md-5 col-lg-6 col-sm-offset-1 col-md-offset-0">
+        <div class="text-wrap100 margin-bottom20">
+          <div class="post-heading-left text-center-sm text-center-xs">
+            <h2>Standart Features</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at dui quis tortor mollis feugiat. In luctus ornare turpis. Donec nec auctor tortor, sit amet vehicula dui. In odio dignissim, eleifend lorem id, consectetur nisi.</p>
+          <div class="list-row">
+            <div class="list-col">
+              <ul class="list-icon">
+                <li><i class="fa fa-check-square-o"></i> Meeting time</li>
+                <li><i class="fa fa-check-square-o"></i> Invite people</li>
+                <li><i class="fa fa-check-square-o"></i> Share location</li>
+                <li><i class="fa fa-check-square-o"></i> Reminder</li>
+              </ul>
+            </div>
+            <div class="list-col">
+              <ul class="list-icon">
+                <li><i class="fa fa-check-square-o"></i> Notification by email</li>
+                <li><i class="fa fa-check-square-o"></i> List of meeting materials</li>
+                <li><i class="fa fa-check-square-o"></i> Made very important</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 col-md-7 col-lg-6 col-sm-offset-1 col-md-offset-0">
+        <figure class="img-layers img-layer-left-front">
+          <div class="img-layer-left">
+            <img src="<%= asset_path('feature-2-left.png') %>" alt="Image Left" class="animation" data-animation="animation-fade-in-up">
+          </div>
+          <div class="img-layer-right">
+            <img src="<%= asset_path('feature-2-right.png') %>" alt="Image Right" class="animation" data-animation="animation-fade-in-up" data-delay="400">
+          </div>
+        </figure>
+      </div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #features2 -->
+<!-- #features3 -->
+<div id="features3" class="bg-color bg-dark container-padding12080">
+  <!-- .container -->
+  <div class="container">
+    <div class="post-heading-center">
+      <h2>Global Casinos</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lut rhoncus sapien vitae purus rhoncus. Eget lacinia nulla viverra sed num purus mauris.</p>
+    </div>
+    <!-- .row -->
+    <div class="row">
+      <div class="col-sm-3">
+        <!-- 1 -->
+        <div class="affa-feature-icon">
+          <i class="fa fa-map animation" data-animation="animation-fade-in-down"></i>
+          <h4>Las Vegas</h4>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <!-- 2 -->
+        <div class="affa-feature-icon">
+          <i class="fa fa-heartbeat animation" data-animation="animation-fade-in-down" data-delay="300"></i>
+          <h4>Atlantic City</h4>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <!-- 3 -->
+        <div class="affa-feature-icon">
+          <i class="fa fa-pie-chart animation" data-animation="animation-fade-in-down" data-delay="600"></i>
+          <h4>Monaco</h4>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <!-- 4 -->
+        <div class="affa-feature-icon">
+          <i class="fa fa-send animation" data-animation="animation-fade-in-down" data-delay="900"></i>
+          <h4>Macao</h4>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #features3 end -->
+<!-- #features4 -->
+<div id="features4" class="container-padding10060">
+  <!-- .container -->
+  <div class="container">
+    <!-- .row-custom -->
+    <div class="row-custom">
+      <div class="col-left">
+        <div class="affa-feature-icon-left">
+          <!-- 1 -->
+          <i class="fa fa-support animation" data-animation="animation-fade-in-left"></i>
+          <h4>Quality Support</h4>
+          <p>Proident scelerisque sollicitudin dictum. Erat molestie, pretium augue, consequat dui quis nulla aliquet id laborum.</p>
+        </div>
+        <div class="affa-feature-icon-left">
+          <!-- 2 -->
+          <i class="fa fa-clock-o animation" data-animation="animation-fade-in-left"></i>
+          <h4>24/7 Support</h4>
+          <p>Proident scelerisque sollicitudin dictum. Erat molestie, pretium augue, consequat dui quis nulla aliquet id laborum.</p>
+        </div>
+        <div class="affa-feature-icon-left">
+          <!-- 3 -->
+          <i class="fa fa-whatsapp animation" data-animation="animation-fade-in-left"></i>
+          <h4>Free Chat and Call</h4>
+          <p>Proident scelerisque sollicitudin dictum. Erat molestie, pretium augue, consequat dui quis nulla aliquet id laborum.</p>
+        </div>
+      </div>
+      <div class="col-center">
+        <div class="post-heading-center margin-bottom40">
+          <h2>Our Service?</h2>
+        </div>
+        <figure class="margin-bottom40 animation" data-animation="animation-fade-in-down" data-delay="300">
+          <img src="<%= asset_path('speech-bubble-6.png') %>" alt="Icon">
+        </figure>
+      </div>
+      <div class="col-right">
+        <div class="affa-feature-icon-right">
+          <!-- 4 -->
+          <i class="fa fa-smile-o animation" data-animation="animation-fade-in-right"></i>
+          <h4>Happy Customers</h4>
+          <p>Proident scelerisque sollicitudin dictum. Erat molestie, pretium augue, consequat dui quis nulla aliquet id laborum.</p>
+        </div>
+        <div class="affa-feature-icon-right">
+          <!-- 5 -->
+          <i class="fa fa-star animation" data-animation="animation-fade-in-right"></i>
+          <h4>5 Stars Support</h4>
+          <p>Proident scelerisque sollicitudin dictum. Erat molestie, pretium augue, consequat dui quis nulla aliquet id laborum.</p>
+        </div>
+        <div class="affa-feature-icon-right">
+          <!-- 6 -->
+          <i class="fa fa-shield animation" data-animation="animation-fade-in-right"></i>
+          <h4>Premium Service</h4>
+          <p>Proident scelerisque sollicitudin dictum. Erat molestie, pretium augue, consequat dui quis nulla aliquet id laborum.</p>
+        </div>
+      </div>
+    </div>
+    <!-- .row-custom end -->
+    <div class="text-center margin-bottom100">
+      <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/page.html" class="btn-custom">View All</a>
+    </div>
+    <div class="post-heading-center">
+      <h2>Why Us?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lut rhoncus sapien vitae purus rhoncus. Eget lacinia nulla viverra sed num purus mauris.</p>
+    </div>
+    <!-- .row -->
+    <div class="row text-center-xs text-center-sm">
+      <div class="col-sm-10 col-md-6 col-lg-5 col-sm-offset-1 col-md-offset-0">
+        <figure class="margin-bottom40 animation" data-animation="animation-fade-in-left">
+          <img src="<%= asset_path('feature-3.png') %>" alt="Image">
+        </figure>
+      </div>
+      <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0 col-lg-offset-1">
+        <div class="text-wrap60 margin-bottom40">
+          <div class="post-heading-left text-center-sm text-center-xs">
+            <h2>Grow Up and <span>Happines</span></h2>
+          </div>
+          <p>Mauris maximus urna metus, ac tristique nisi blandit quis. Aenean placerat id felis, interdum accumsan diam hendrerit sit amet. Pellentesque laoreet mium hendrerit dapibus. Integer sit amet venenatis arcu, quis feugiat dui. Donec tur non congueras felis, scelerisque varius est. Proin tristique vestibulum aliquam ultrices dolor ac lorem vehicula, in vulputate viverra.</p>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #features4 end -->
+<!-- #counter -->
+<div id="token" class="bg-color bg-parallax" data-parallax="scroll" data-speed="0.2" data-natural-width="1920" data-natural-height="1080" data-image-src="<%= asset_path('content/bg/2.jpg') %>">
+  <!-- .bg-overlay -->
+  <div class="bg-overlay container-padding10060">
+    <!-- .container -->
+    <div class="container">
+      <!-- .row -->
+      <div class="row">
+        <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0 margin-bottom40 text-center-xs text-center-sm">
+          <h2 class="margin-bottom30"><strong>Work Hard, Play Hard!</strong></h2>
+          <p>Mauris maximus urna metus, ac tristique nisi blandit quis. Aenean placerat id felis, interdum accumsan diam hendrerit sit amet. Pellentesque laoreet mium hendrerit dapibus. Integer sit amet venenatis arcu, quis feugiat dui. Donec tur non congueras felis, scelerisque varius est. Proin tristique vestibulum aliquam ultrices dolor ac lorem vehicula, in vulputate viverra.</p>
+        </div>
+        <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0">
+          <div class="row">
+            <div class="col-sm-6">
+              <!-- 1 -->
+              <div class="affa-counter">
+                <img src="<%= asset_path('stopwatch-24.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-down">
+                <h4><span>8000</span>+</h4>
+                <p>Hours work</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <!-- 2 -->
+              <div class="affa-counter">
+                <img src="<%= asset_path('user-45.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-down" data-delay="300">
+                <h4><span>100</span></h4>
+                <p>Happy people</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .row end -->
+    </div>
+    <!-- .container end -->
+  </div>
+  <!-- .bg-overlay end -->
+</div>
+<!-- #counter end -->
+<!-- #features5 -->
+<div id="features5" class="container-padding10060">
+  <!-- .container -->
+  <div class="container">
+    <!-- .row -->
+    <div class="row">
+      <div class="col-sm-6 margin-bottom40">
+        <h3 class="margin-bottom30"><strong>Token Allocation</strong></h3>
+        <div class="affa-tbl-process">
+          <!-- 1 -->
+          <div class="tbl-process-txt">
+            <h4>Crowdsale</h4>
+            <p>50%</p>
+          </div>
+          <div class="tbl-process-bar">
+            <p style="width:50%;">50%</p>
+          </div>
+        </div>
+        <div class="affa-tbl-process">
+          <!-- 2 -->
+          <div class="tbl-process-txt">
+            <h4>Founders</h4>
+            <p>13%</p>
+          </div>
+          <div class="tbl-process-bar">
+            <p style="width:13%;">13%</p>
+          </div>
+        </div>
+        <div class="affa-tbl-process">
+          <!-- 3 -->
+          <div class="tbl-process-txt">
+            <h4>Platform Development</h4>
+            <p>15%</p>
+          </div>
+          <div class="tbl-process-bar">
+            <p style="width:15%;">15%</p>
+          </div>
+        </div>
+        <div class="affa-tbl-process">
+          <!-- 4 -->
+          <div class="tbl-process-txt">
+            <h4>Advisors & Early Bakers</h4>
+            <p>16%</p>
+          </div>
+          <div class="tbl-process-bar">
+            <p style="width:16%;">16%</p>
+          </div>
+        </div>
+        <div class="affa-tbl-process tbl-process-recommended margin-bottom0">
+          <!-- 5 -->
+          <div class="tbl-process-txt">
+            <h4>Bounties</h4>
+            <p>6%</p>
+          </div>
+          <div class="tbl-process-bar">
+            <p style="width:6%;">6%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 margin-bottom40">
+        <h3 class="margin-bottom30"><strong>Our Mission</strong></h3>
+        <div class="panel-group panel-group-custom" id="accordion-tab">
+          <div class="panel panel-default">
+            <!-- 1 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                                <a data-toggle="collapse" href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#accordion-tab1">Become new premium Brand</a>
+              </h4>
+            </div>
+            <div id="accordion-tab1" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit vestibulum dunc semper nulla vitae diam lobortis interdum varius arcu tincidunt. Quisque sed nisi vel lorem blandit pharetra. Vivamus mollis blandit elit, nec dunc lobortis tellus laoret integer sodales scelerisque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <!-- 2 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#accordion-tab2">Make Startup grow faster</a>
+              </h4>
+            </div>
+            <div id="accordion-tab2" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit vestibulum dunc semper nulla vitae diam lobortis interdum varius arcu tincidunt. Quisque sed nisi vel lorem blandit pharetra. Vivamus mollis blandit elit, nec dunc lobortis tellus laoret integer sodales scelerisque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #features5 end -->
+<!-- #works -->
+<div id="whitepaper" class="bg-color container-padding100">
+  <!-- .container -->
+  <div class="container">
+    <div class="post-heading-center">
+      <h2>White Paper</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lut rhoncus sapien vitae purus rhoncus. Eget lacinia nulla viverra sed num purus mauris.</p>
+    </div>
+  </div>
+  <!-- .container end -->
+  <!-- .carousel-slider -->
+  <div class="carousel-slider affa-portfolios-slider2">
+    <div class="slick-slide">
+      <!-- 1 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0">
+            <div class="slide-txt">
+              <h1>1</h1>
+              <h2>Flatland - Landing Page</h2>
+              <p>Aliquam vel iaculis lacus. Maecenas id libero tempus, suscipit dolore vitae, dignissim arcu. Fusce bibendum semus etio urna elementum, dignissim odio scele risque. Quisque eu ex posuere, rhoncus turpis ac, pellentesque felis. Cras risus, accumsan tellus velom, ulamcorper facilisis vitae consequat lorem purus.</p>
+              <div class="btn-section">
+                <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom btn-border btn-white">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0 col-lg-5 col-lg-offset-1">
+            <figure class="animation" data-animation="animation-fade-in-right"><img src="<%= asset_path('1.png') %>" alt="Image"></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slick-slide">
+      <!-- 2 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0">
+            <div class="slide-txt">
+              <h1>2</h1>
+              <h2>Conversi - Landing Page</h2>
+              <p>Aliquam vel iaculis lacus. Maecenas id libero tempus, suscipit dolore vitae, dignissim arcu. Fusce bibendum semus etio urna elementum, dignissim odio scele risque. Quisque eu ex posuere, rhoncus turpis ac, pellentesque felis. Cras risus, accumsan tellus velom, ulamcorper facilisis vitae consequat lorem purus.</p>
+              <div class="btn-section">
+                <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom btn-border btn-white">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0 col-lg-5 col-lg-offset-1">
+            <figure class="animation" data-animation="animation-fade-in-right"><img src="<%= asset_path('2.png') %>" alt="Image"></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slick-slide">
+      <!-- 3 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0">
+            <div class="slide-txt">
+              <h1>3</h1>
+              <h2>Bestapp - Landing Page</h2>
+              <p>Aliquam vel iaculis lacus. Maecenas id libero tempus, suscipit dolore vitae, dignissim arcu. Fusce bibendum semus etio urna elementum, dignissim odio scele risque. Quisque eu ex posuere, rhoncus turpis ac, pellentesque felis. Cras risus, accumsan tellus velom, ulamcorper facilisis vitae consequat lorem purus.</p>
+              <div class="btn-section">
+                <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom btn-border btn-white">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0 col-lg-5 col-lg-offset-1">
+            <figure class="animation" data-animation="animation-fade-in-right"><img src="<%= asset_path('3.png') %>" alt="Image"></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .carousel-slider end -->
+</div>
+<!-- #works end -->
+<!-- #works2 -->
+<div id="roadmap" class="container-padding100">
+  <!-- .container -->
+  <div class="container">
+    <div class="post-heading-center">
+      <h2>Roadmap</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lut rhoncus sapien vitae purus rhoncus. Eget lacinia nulla viverra sed num purus mauris.</p>
+    </div>
+    <div class="carousel-slider affa-portfolios-slider row margin-bottom50 animation" data-animation="animation-fade-in-down">
+      <div class="slick-slide col-sm-4 entertainment mobile">
+        <!-- 1 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/1.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 1">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('1.jpg') %>" alt="Portfolio Item 1">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 1</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 creative">
+        <!-- 2 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/2.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 2">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('2.jpg') %>" alt="Portfolio Item 2">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 2</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 creative mobile">
+        <!-- 3 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/3.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 3">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('3.jpg') %>" alt="Portfolio Item 3">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 3</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 entertainment">
+        <!-- 4 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/4.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 4">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('4.jpg') %>" alt="Portfolio Item 4">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 4</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 creative mobile">
+        <!-- 5 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/5.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 5">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('5.jpg') %>" alt="Portfolio Item 5">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 5</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 creative entertainment mobile">
+        <!-- 6 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/6.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 6">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('6.jpg') %>" alt="Portfolio Item 6">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 6</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 creative entertainment">
+        <!-- 7 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/7.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 7">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('7.jpg') %>" alt="Portfolio Item 7">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 7</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 mobile">
+        <!-- 8 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/8.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 8">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('8.jpg') %>" alt="Portfolio Item 8">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 8</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="slick-slide col-sm-4 entertainment mobile">
+        <!-- 9 -->
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/images/content/portfolios/full/9.jpg" class="fancybox" data-fancybox-group="images_gallery" title="Portfolio Item 9">
+          <figure class="img-hover2">
+            <img src="<%= asset_path('9.jpg') %>" alt="Portfolio Item 9">
+            <div class="overlay-masked">
+              <i class="fa fa-search-plus"></i>
+              <p>Portfolio Item 9</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom">View All</a>
+    </div>
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #works2 end -->
+<!-- #teams -->
+<div id="team" class="padding-bottom60">
+  <!-- .container -->
+  <div class="container">
+    <div class="post-heading-center">
+      <h2>The Team</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <!-- .row -->
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- 1 -->
+        <div class="affa-team animation" data-animation="animation-fade-in-down">
+          <img src="<%= asset_path('1(1).jpg') %>" alt="Avatar">
+          <div class="team-overlay">
+            <div class="team-name">
+              <p>CEO &amp; Founder Affapress.com</p>
+              <h4>Mugiwara Kiwolen</h4>
+            </div>
+            <p class="team-txt">PHP Developer, Back-end Specialist</p>
+            <div class="team-socials">
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <!-- 2 -->
+        <div class="affa-team animation" data-animation="animation-fade-in-down" data-delay="300">
+          <img src="<%= asset_path('2(1).jpg') %>" alt="Avatar">
+          <div class="team-overlay">
+            <div class="team-name">
+              <p>UI Designer Affapress.com</p>
+              <h4>Mirza Ramadhany</h4>
+            </div>
+            <p class="team-txt">Pixel Perfect, User Experience Learning, Mentor UI UX</p>
+            <div class="team-socials">
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <!-- 3 -->
+        <div class="affa-team animation" data-animation="animation-fade-in-down" data-delay="600">
+          <img src="<%= asset_path('3(1).jpg') %>" alt="Avatar">
+          <div class="team-overlay">
+            <div class="team-name">
+              <p>Front-end Coder Affapress.com</p>
+              <h4>Akhmad Yusuf</h4>
+            </div>
+            <p class="team-txt">Web Developer, HTML/CSS Specialist</p>
+            <div class="team-socials">
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #teams -->
+<!-- #testimonials -->
+<div id="testimonials" class="bg-color bg-dark padding-top40">
+  <!-- .container -->
+  <div class="container">
+    <!-- .affa-testimonials-carousel-wrap -->
+    <div class="affa-testimonials-carousel-wrap">
+      <div class="carousel-slider affa-testimonials-carousel">
+        <div class="slick-slide">
+          <!-- 1 -->
+          <div class="affa-testimonial">
+            <h4><strong>Flatland</strong><br>App Landing Page</h4>
+            <div class="testimonial-txt">
+              <p>"Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor nunc incididunt labore etiam dolore magna aliqua. Enim id minim veniam exercitation laboris consequat dolor reprehende voluptate cillum fugiatos."</p>
+            </div>
+            <p class="testimonial-name">Mugiwara, Web Developer</p>
+          </div>
+        </div>
+        <div class="slick-slide">
+          <!-- 2 -->
+          <div class="affa-testimonial">
+            <h4><strong>Conversi</strong><br>Business Landing Page</h4>
+            <div class="testimonial-txt">
+              <p>"Etiam ac nulla ornare purus vulputate finibus ultricies vitae exa phasellus maximus felis tincidunt, ac pharetra urna scelerisque."</p>
+            </div>
+            <p class="testimonial-name">Ramadhany, UX Expert</p>
+          </div>
+        </div>
+        <div class="slick-slide">
+          <!-- 3 -->
+          <div class="affa-testimonial">
+            <h4><strong>Bestapp</strong><br>Flat Landing Page</h4>
+            <div class="testimonial-txt">
+              <p>"Mauris maximus urna metus, ac tristique nisi blandit quis. Aenean placerat euismod felis, interdum accumsan diam hendrerit sit amet laoreet mina eget hendrerit dapibus ornare purus vulputate."</p>
+            </div>
+            <p class="testimonial-name">Affadto, Front-end Coder</p>
+          </div>
+        </div>
+      </div>
+      <figure class="affa-testimonials-img">
+        <img src="<%= asset_path('testimonials-img.png') %>" alt="Image" class="animation" data-animation="animation-fade-in-up">
+      </figure>
+    </div>
+    <!-- .affa-testimonials-carousel-wrap end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #testimonials end -->
+<!-- #pricing -->
+<div id="bounty" class="bg-grey container-padding10060">
+  <!-- .container -->
+  <div class="container">
+    <div class="post-heading-center">
+      <h2>Bounty Program</h2>
+    </div>
+    <!-- .affa-tbl-pricing -->
+    <div class="affa-tbl-pricing">
+      <div class="row">
+        <div class="col-sm-4 tbl-prc-col">
+          <!-- 1 -->
+          <div class="tbl-prc-wrap">
+            <div class="tbl-prc-heading">
+              <h4>Basic</h4>
+              <h5 class="tbl-prc-price"><sup>$</sup>9<sub>/mo</sub></h5>
+              <p>Plenty of processing power for any personal projects, big/small.</p>
+            </div>
+            <ul class="tbl-prc-list">
+              <li>10k monthly requests</li>
+              <li>9am-5pm technical support</li>
+              <li>Public API access</li>
+            </ul>
+            <div class="tbl-prc-footer">
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom">Choose It</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 tbl-prc-col tbl-prc-col-recommended">
+          <!-- 2 -->
+          <div class="tbl-prc-wrap">
+            <div class="tbl-prc-heading">
+              <h4>Business</h4>
+              <h5 class="tbl-prc-price"><sup>$</sup>49<sub>/mo</sub></h5>
+              <p>The perfect sized plan for small businesses to get started.</p>
+            </div>
+            <ul class="tbl-prc-list">
+              <li>100k monthly requests</li>
+              <li>24/7 technical support</li>
+              <li>Public API access</li>
+            </ul>
+            <div class="tbl-prc-footer">
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom">Choose It</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 tbl-prc-col">
+          <!-- 3 -->
+          <div class="tbl-prc-wrap">
+            <div class="tbl-prc-heading">
+              <h4>Premium</h4>
+              <h5 class="tbl-prc-price"><sup>$</sup>119<sub>/mo</sub></h5>
+              <p>An unlimited plan that will scale infinitely to any size project.</p>
+            </div>
+            <ul class="tbl-prc-list">
+              <li>Unlimited monthly requests</li>
+              <li>24/7 technical support</li>
+              <li>Public API access</li>
+            </ul>
+            <div class="tbl-prc-footer">
+              <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom">Choose It</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .affa-tbl-pricing end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #pricing end -->
+<!-- #counter2 -->
+<div id="counter2" class="container-padding100">
+  <!-- .container -->
+  <div class="container">
+    <!-- .row -->
+    <div class="row row-counter">
+      <div class="col-sm-3">
+        <!-- 1 -->
+        <div class="affa-counter2">
+          <h4><span>61</span>%</h4>
+          <p>Completed Task</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <!-- 2 -->
+        <div class="affa-counter2">
+          <h4><span>100</span>K</h4>
+          <p>Client join with Love</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <!-- 3 -->
+        <div class="affa-counter2">
+          <h4><span>100</span></h4>
+          <p>New Themeplate for Business</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <!-- 4 -->
+        <div class="affa-counter2">
+          <h4><span>10</span></h4>
+          <p>Office on the world</p>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+    <div class="text-center margin-top10">
+      <p class="text-big margin-bottom20">"The Total Economic Impact of StartUp"</p>
+      <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="btn-custom btn-border">View Dashboard</a>
+    </div>
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #counter2 end -->
+<!-- #join -->
+<div id="partner" class="bg-color bg-parallax" data-parallax="scroll" data-speed="0.2" data-natural-width="1920" data-natural-height="1080" data-image-src="<%= asset_path('content/bg/3.jpg') %>">
+  <!-- .bg-overlay -->
+  <div class="bg-overlay bg-overlay70 container-padding120">
+    <!-- .container -->
+    <div class="container">
+      <div class="post-heading-center">
+        <h2>Partners</h2>
+        <p>Lorem ipsum dolor sit amet, consequat aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sunt in culpa qui officia deserunt mollit anim id est laborum tellus laoret integer sodales scelerisque.</p>
+      </div>
+      <div class="btn-section text-center">
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#contact" class="btn-custom smooth-scroll">Contact Us</a>
+      </div>
+    </div>
+    <!-- .container end -->
+  </div>
+  <!-- .bg-overlay end -->
+</div>
+<!-- #join end -->
+<!-- #contact -->
+<div id="faq" class="container-padding10060">
+  <!-- .container -->
+  <div class="container">
+    <div class="post-heading-center">
+      <h2>FAQ</h2>
+    </div>
+    <!-- .row -->
+    <div class="row">
+      <div class="col-sm-7 margin-bottom40">
+        <form method="post" action="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="affa-form-contact">
+          <div class="submit-status"></div>
+          <!-- submit status -->
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="text" name="email" placeholder="Email Address *">
+          <textarea name="message" placeholder="Message *"></textarea>
+          <div class="form-contact-submit">
+            <input type="submit" name="submit" value="Send Message">
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-5 col-lg-4 col-lg-offset-1">
+        <div class="affa-contact-info">
+          <!-- 1 -->
+          <img src="<%= asset_path('phone-call-6.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-left">
+          <h4>Phone Number</h4>
+          <p>(00) 123-4567890 (tel-1)</p>
+          <p>(00) 123-4567890 (tel-2)</p>
+        </div>
+        <div class="affa-contact-info">
+          <!-- 2 -->
+          <img src="<%= asset_path('mail-2.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-left">
+          <h4>Email Address</h4>
+          <p>email_1@example.com</p>
+          <p>email_2@example.com</p>
+        </div>
+        <div class="affa-contact-info">
+          <!-- 3 -->
+          <img src="<%= asset_path('map-19.png') %>" alt="Icon" class="animation" data-animation="animation-fade-in-left">
+          <h4>Business Address</h4>
+          <p>123 Main Street Cottage, US</p>
+          <p>Long Branch, P.O Box 65148</p>
+        </div>
+      </div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+</div>
+<!-- #contact end -->
+<div id="companyMap" class="affa-map-frame"></div>
+<!-- map -->
+<!-- #footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-logo animation" data-animation="animation-fade-in-down"><img src="<%= asset_path('logo_footer.png') %>" alt="Logo"></div>
+    <div class="footer-socials">
+      <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Facebook" class="animation" data-animation="animation-bounce-in"><i class="fa fa-facebook"></i></a>
+      <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Twitter" class="animation" data-animation="animation-bounce-in" data-delay="200"><i class="fa fa-twitter"></i></a>
+      <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Instagram" class="animation" data-animation="animation-bounce-in" data-delay="400"><i class="fa fa-instagram"></i></a>
+      <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" title="Dribbble" class="animation" data-animation="animation-bounce-in" data-delay="600"><i class="fa fa-dribbble"></i></a>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <p>© 2016 Copyright. All Rights Reserved. Created by <a href="http://affapress.com/" target="_blank">Affapress.</a></p>
+    </div>
+  </div>
+</footer>
+<!-- #footer end -->
+<div id="customize">
+  <div class="wrap-customize">
+    <div class="customize-panel">
+      <h5>Header</h5>
+      <div class="customize-list-link">
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_1/" title="Header Layout 1"><i class="fa fa-caret-right"></i> Layout 1</a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/" title="Header Layout 2"><i class="fa fa-caret-right"></i> Layout 2</a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_3/" title="Header Layout 3"><i class="fa fa-caret-right"></i> Layout 3</a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_4/" title="Header Layout 4"><i class="fa fa-caret-right"></i> Layout 4</a>
+      </div>
+    </div>
+    <div class="customize-panel">
+      <h5>Colors</h5>
+      <div class="customize-list-color">
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="blue" title="Blue" style="background-color:#3498db;"></a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="green" title="Green" style="background-color:#28be56;"></a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="orange" title="Orange" style="background-color:#f46c3c;"></a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="pink" title="Pink" style="background-color:#f64197;"></a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="purple" title="Purple" style="background-color:#8b3cdb;"></a>
+        <a href="https://affapress.com/templates/wstartup_responsive_startup_landing_page/html/header_2/#" class="yellow" title="Yellow" style="background-color:#e9ab41;"></a>
+      </div>
+    </div>
+  </div>
+  <div class="popup-open"><i class="fa fa-gear"></i></div>
+</div>
+<!--[if lt IE 8]>
+    <div class="browser-notice">
+          <div class="container">
+            <div class="text">
+                  <h1>Internet Explorer Out To Date</h1>
+                  <p>Please update your Internet Explorer browser with a newer version (Internet Explorer 8 above) now!</p>
+                  <span>You can download it <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">here....</a></span>
+              </div>
+          </div>
+      </div>
+<![endif]-->

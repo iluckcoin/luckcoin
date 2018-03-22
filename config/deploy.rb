@@ -1,0 +1,79 @@
+# config valid for current version and patch releases of Capistrano
+lock "~> 3.10.0"
+
+
+set :application, 'gst_network'     # 设置部署项目的名字
+set :repo_url, 'git@bitbucket.org:newsilkroad/gst.git'          # 设置项目的 git repo
+
+set :format, :pretty
+set :pty, false
+set :deploy_via, :remote_cache
+set :use_sudo, true
+
+# set :sidekiq_config, "#{current_path}/config/sidekiq.yml"
+
+# puma
+set :puma_preload_app, false
+set :puma_prune_bundler, true
+
+# linked_dirs
+# 是将项目的指定目录 link 到 shared 目录中, 这个操作会在从 repo 取下代码之后进行.
+# 比如 log 目录, 每次部署完毕后新的版本中的 log 目录都会 link 到 shared/log 下
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads public/upload}
+
+# linked_files
+# 它是将 shared 目录中的文件 link 到项目中, 文件要首先存在于 shared 目录中, 不然 deploy 时会报错
+# 在 Rails 项目中, 主要就是 database.yml, secret.yml 这样的敏感文件
+set :linked_files, %w{config/database.yml config/secrets.yml config/application.yml}
+
+# rvm_type
+
+set :rvm_type, :user
+# set :rvm_ruby_version, '2.1.2'
+# set :rvm_roles, [:app, :web, :db]
+
+set :keep_releases, 3   # 最多存放3个部署版本
+
+
+namespace :deploy do
+
+  # 自定义了一个部署任务, 即自动运行 rake RAILS_ENV=rails_env db:create
+  # 其中 release_path 指的是当前 release 目录
+  # `fetch(:rails_env)` 读取配置中的 rails_env 变量, 并在 rake 命令中带上 env 变量
+  task :create_database do
+    on roles(:db) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, 'db:create'
+        end
+      end
+    end
+  end
+
+  desc 'db seed'
+  task :db_seed do
+    on roles(:db) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, 'db:seed'
+        end
+      end
+    end
+  end
+
+  before :migrate, :create_database     # 在每次 rake db:migrate 前都运行 rake db:create
+  after  :finishing, 'deploy:cleanup'   # 在每次部署完毕后, 清理部署时生成的 tmp 文件及多余的版本
+end
+
+
+def cw_log_dir
+  "#{shared_path}/log"
+end
+
+def cw_pid_dir
+  "#{shared_path}/tmp/pids"
+end
+
+def rails_env
+  fetch(:rails_env, false) ? "RAILS_ENV=#{fetch(:rails_env)}" : ''
+end
